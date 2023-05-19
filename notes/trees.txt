@@ -1,0 +1,27 @@
+3/27 Tree traversals
+
+- main traversal method is recursion, loops are possible as well.
+- if you need to process all nodes in a tree, tree traversal.
+-3 ways for a binary tree
+    - pre-order
+        process the root, print
+        left subtree, then process the right subtree. Using recursion
+    - in-order
+        process the nodes in the left subtree recursively
+        process the root 
+        process the nodes in the right subtree recursively
+    - post-order
+        root is last
+
+Binary Search Tree
+    they are organized and structured
+        the values in n's left subtree are less than or equal to n
+        the values in n's right subtree are greater than or equal to n
+
+    3 things to consider when deleting from a bst 
+        N is a leaf
+            easy. set the pointer from parent to null, release memory
+        N has only 1 child
+            2 cases, left child and right child. set the child parent node to Ns parent node
+        N has 2 children
+            must choose 1 
